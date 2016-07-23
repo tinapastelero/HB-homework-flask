@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}Ubermelon Job Application{% endblock %}
+{% block h1 %}{% endblock %}
+
+{% block content %}
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Ubermelon Job Application</h1>
+        <h4 class="border">Thank you for your interest in applying for a role at Ubermelon. <br>Please fill out the form below and we will get back to you as soon as possible.</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <form action="/application-response" method="post">
+            <label for="firstname">First Name: </label> <input class="yellow" id="firstname" type="text" name="firstname"><br>    
+            <label for="lastname">Last Name: </label> <input class="yellow bold" id="lastname" type="text" name="lastname"><br>
+            <label for="salary">Salary Requirement (in USD): </label> <input class="yellow" id="salary" type="number" name="salary"><br>
+            <label for="jobtype">Job Type: </label> 
+                <select class="yellow" id="jobtype" name="jobtype">
+                  <option value="software-engineer">Software Engineer</option>
+                  <option value="qa-engineer">QA Engineer</option>
+                  <option value="product-manager">Product Manager</option>
+                </select><br> 
+            <input class="yellow" type="submit" name="submit" value="Submit Form"><br> 
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+/* Your CSS goes here */
+.yellow{
+    background-color: yellow;
+}
+.bold{
+    font-weight: bold;
+}
+.border{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
